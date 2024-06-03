@@ -48,7 +48,7 @@ const Content = () => {
 
     return (
         <div className='content-list pt-4 flex flex-wrap gap-5 '>
-            {loading && <div className='flex items-center justify-center w-full h-screen'>Loading...</div>}
+            {loading && <div className='flex items-center justify-center w-full h-screen ml-44'>Loading...</div>}
             {data && data.map((content, index) => {
                 return (
                     <div className='content shadow-md flex flex-col justify-between border w-[200px] h-[200px] rounded-md p-3' key={index}>
