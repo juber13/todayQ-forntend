@@ -56,12 +56,12 @@ const Sidebar = () => {
 
             <div className='flex justify-between  w-full mt-2 p-2'>
                 <p className='text-orange-800 text-sm '>Increasig</p>
-                <div onClick={() => handleSorting("increasing")} className={`radio-box border w-[20px] h-[20px] rounded-full cursor-pointer bg-${flag == true ? "blue-500" : "black"}`}></div>
+                <div onClick={() => handleSorting("increasing")} className={`radio-box border w-[20px] h-[20px] rounded-full cursor-pointer`} style={{"background" : flag == true ? "orange" : ""}}></div>
             </div>
 
             <div className='flex justify-between w-full p-2'>
                 <p className='text-orange-800 text-sm'>Decreasig</p>
-                <div onClick={() => handleSorting("decreasing")} className={`radio-box border  w-[20px] h-[20px] rounded-full cursor-pointer bg-${flag == false ? "blue-500" : "black"}`}></div>
+                <div onClick={() => handleSorting("decreasing")} className={`radio-box border  w-[20px] h-[20px] rounded-full cursor-pointer`} style={{"background" : flag == false ? "orange" : ""}}></div>
             </div>
 
             <div className='flex justify-between w-full p-2'>
