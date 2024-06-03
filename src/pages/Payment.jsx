@@ -39,7 +39,7 @@ const Payment = () => {
         let transactionId = generateTransactionID();
         try {
             setLoading(true);
-            const res = await fetch('/api/payment/saveDetail', {
+            const res = await fetch('https://todayq-backend-96id.onrender.com/api/payment/saveDetail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
