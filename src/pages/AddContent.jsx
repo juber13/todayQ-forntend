@@ -21,7 +21,7 @@ const AddContent = () => {
     const uploadContent = async () => {
         try {
             setLoading(true);
-            const res = await fetch('/api/content/upload', {
+            const res = await fetch('https://todayq-backend-96id.onrender.com/api/content/upload', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
